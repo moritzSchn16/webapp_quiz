@@ -1,2 +1,2 @@
 Name: 
-Button-Sequenz: A
+Button-Sequenz: A,B
