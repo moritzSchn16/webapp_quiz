@@ -73,15 +73,6 @@ def main():
 
         col1, col2 = st.columns(2)
         with col1:
-            # Button zum Drucken der Sequenz
-            if st.button("Antworten in Sidebar anzeigen"):
-                st.write("Antworten in Sidebar")
-                #st.write("Sequenz: ", ",".join(st.session_state.button_sequence))
-                x = 0
-                for i in st.session_state.button_sequence:
-                    st.sidebar.write(f"Frage:{x}, Antwort: {i}")
-                    x += 1
-        with col2:
             #Button zum Löschen von dummen Antworten
             if st.button("Letzte Antwort Löschen"):
                 if len(st.session_state.button_sequence) > 0:
@@ -91,7 +82,15 @@ def main():
                 for i in st.session_state.button_sequence:
                     st.sidebar.write(f"Frage:{x}, Antwort: {i}")
                     x += 1
-
+        with col2:
+            # Button zum Drucken der Sequenz
+            if st.button("Antworten in Sidebar anzeigen"):
+                st.write("Antworten in Sidebar")
+                #st.write("Sequenz: ", ",".join(st.session_state.button_sequence))
+                x = 0
+                for i in st.session_state.button_sequence:
+                    st.sidebar.write(f"Frage:{x}, Antwort: {i}")
+                    x += 1
 
         st.write('Am Ende des Quizzes')
         # Überprüfe, ob die Sequenzlänge 5 ist
