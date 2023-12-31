@@ -25,7 +25,7 @@ if 'total_button_clicks' not in st.session_state:
     st.session_state.total_button_clicks = 0
 
 # Vordefinierte Sequenz zum Vergleich
-predefined_sequence = ["A", "A", "B", "C", "A"]
+predefined_sequence = ['D', 'D', 'A', 'B', 'C', 'A', 'C', 'A', 'C', 'B', 'A', 'C', 'B', 'A', 'B', 'C', 'B', 'A', 'B', 'B', 'B', 'D', 'B', 'C', 'C', 'B', 'D', 'A', 'C', 'D', 'A', 'D', 'C', 'D', 'D', 'C', 'A', 'C', 'A', 'A', 'D', 'A', 'C', 'B', 'B', 'C', 'A', 'D', 'D', 'D']
 
 # Streamlit App-Layout
 def main():
@@ -33,7 +33,7 @@ def main():
     st.title("Das Quiz 2023 - APP")
 
     # Zeige die Gesamtanzahl der Button-Klicks an
-    st.title(f"Frage: {st.session_state.total_button_clicks} / 70")
+    st.title(f"Frage: {st.session_state.total_button_clicks} / 50")
 
     # Create a placeholder for the text input
     input_placeholder = st.empty()
@@ -94,10 +94,10 @@ def main():
 
         st.write('Am Ende des Quizzes')
         # Überprüfe, ob die Sequenzlänge 5 ist
-        if len(st.session_state.button_sequence) == 5:
+        if len(st.session_state.button_sequence) > 50:
             # Button zum Überprüfen, wie viele Elemente mit der vordefinierten Sequenz übereinstimmen
             if st.button("Sequenz überprüfen"):
                 match_count = sum([1 for a, b in zip(st.session_state.button_sequence, predefined_sequence) if a == b])
-                st.write(f"Übereinstimmende Elemente: {match_count}")
+                st.write(f"Übereinstimmende Antworten: {match_count} von 50 Fragen")
 if __name__ == "__main__":
     main()
