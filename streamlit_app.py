@@ -94,7 +94,7 @@ def main():
 
         st.write('Am Ende des Quizzes')
         # Überprüfe, ob die Sequenzlänge 5 ist
-        if len(st.session_state.button_sequence) > 50:
+        if len(st.session_state.button_sequence) >= 49:
             # Button zum Überprüfen, wie viele Elemente mit der vordefinierten Sequenz übereinstimmen
             if st.button("Sequenz überprüfen"):
                 match_count = sum([1 for a, b in zip(st.session_state.button_sequence, predefined_sequence) if a == b])
