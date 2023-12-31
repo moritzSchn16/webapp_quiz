@@ -1,0 +1,2 @@
+Name: Player 1
+Button-Sequenz: A,B,C,D,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A

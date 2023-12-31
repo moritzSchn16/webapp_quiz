@@ -1,2 +1,2 @@
 Name: Moritz
-Button-Sequenz: D,D,A,B,C,A,C,A,C,B,A,C,B,A,B,C,B,A,B,B,B,D,B,C,C,B,D,A,C,D,A,D,C,D,D,C,A,C,A,A,D,A,C,B,B,C,A,D,D,D,A
+Button-Sequenz: C,B
