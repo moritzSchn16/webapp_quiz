@@ -85,7 +85,7 @@ def main():
         with col2:
             # Button zum Drucken der Sequenz
             if st.button("Antworten in Sidebar anzeigen"):
-                st.write("Antworten wird in Sidebar angezeigt")
+                st.write(f"Antworten wird in Sidebar angezeigt - es wurden {len(st.session_state.button_sequence)} Antworten gegeben")
                 #st.write("Sequenz: ", ",".join(st.session_state.button_sequence))
                 x = 0
                 for i in st.session_state.button_sequence:
